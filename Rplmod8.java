@@ -12,30 +12,23 @@ import java.util.Scanner;
  * @author Praktikan
  */
 public class Rplmod8 {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-        Scanner show = new Scanner(System.in);
-        System.out.print("Masukan Jumlah Deret Fibonacci : ");
-        int n = show.nextInt();
-        long fib[] = new long[n];
-         
-        fib[0] = 0;
-        fib[1] = 1;
-         
-        for(int i = 2; i < n; i++) {
-            fib[i] = fib[i-1] + fib[i-2];
-        }
-         
-        for (int i = 0; i < n; i++) {
-            System.out.print(fib[i] +  " ");
-        }
-    }
- 
+    
+   public static void main(String[] args) {
+    int ab;
+    int ac = 1;
+    int input;
+    boolean a = false;
+    Scanner in = new Scanner(System.in);
+    
+    System.out.println("input");
+    ab = in.nextInt();
+    
+    System.out.println(" ");
+    
+    ac =ab - ac;
+    ab = ab + ac;
+    
+    System.out.println(ab + " ");
+   System.out.println();    
+  }
 }
-    
-    
-
